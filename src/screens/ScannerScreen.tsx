@@ -234,7 +234,7 @@ export function ScannerScreen({ cartItems, onAddToCart, onUpdateQuantity, onOpen
         device={device}
         isActive={true}
         callback={handleBarcodeScanned}
-        options={['qr', 'ean_13', 'ean_8', 'code_128', 'code_39']}
+        options={['all']}
       />
 
       <CartButton count={cartItems.length} onPress={onOpenCart} />
